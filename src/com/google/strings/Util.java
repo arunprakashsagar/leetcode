@@ -1,7 +1,12 @@
 package com.google.strings;
 
+import java.util.ArrayList;
+import java.util.Random;
+
 public class Util {
 
+	private static Random rand = new Random();
+	
 	public Util() {
 		// TODO Auto-generated constructor stub
 	}
@@ -21,5 +26,20 @@ public class Util {
 		for (int[] num : arr)
 			printArr(num);
 		System.out.println();
+	}
+	
+	public static ArrayList<Integer> getArrayList(int size){
+		ArrayList<Integer> A = new ArrayList<Integer>();
+		for(int i=1; i<=size;i++)
+			A.add(i);
+		return A;
+	}
+	
+	public static ArrayList<Integer> getRandomArrayList(int size){
+		ArrayList<Integer> A = new ArrayList<Integer>();
+		
+		for(int i=1; i<=size;i++)
+			A.add(rand.nextInt(size));
+		return A;
 	}
 }
