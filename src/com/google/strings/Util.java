@@ -1,6 +1,7 @@
 package com.google.strings;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Util {
@@ -16,6 +17,12 @@ public class Util {
 
 	}
 
+	public static void printList(List<Integer> list) {
+		for (int num : list)
+			System.out.print(num + " ");
+		System.out.println();
+	}
+	
 	public static void printArr(int[] arr) {
 		for (int num : arr)
 			System.out.print(num + " ");
