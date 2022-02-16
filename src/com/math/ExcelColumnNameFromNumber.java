@@ -17,7 +17,7 @@ public class ExcelColumnNameFromNumber {
 			num = num - 1;
 			int x = num % 26;
 			ans = (char) ('A' + x) + ans;
-			num = num / 26;
+			num = num / 26;	
 		}
 		return ans;
 	}
